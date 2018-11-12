@@ -22,3 +22,9 @@ Add-type -assembly "Microsoft.Office.Interop.Outlook" | out-null; $olFolders = "
 ```
 reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths"
 ```
+
+### To get the certificates installed that are not in Microsoft Certificate Trust List - [SysInternals](https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck)
+>>>
+```
+sigcheck.exe -tuv 
+```
