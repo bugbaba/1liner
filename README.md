@@ -28,3 +28,13 @@ reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Pat
 ```
 sigcheck.exe -tuv 
 ```
+
+### Deleting event logs - priviledged access
+`Note: This generated an event log of itself`
+>>>
+```
+wevtutil cl system
+wevtutil cl application
+wevtutil cl security
+
+```
