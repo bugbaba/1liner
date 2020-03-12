@@ -38,3 +38,10 @@ wevtutil cl application
 wevtutil cl security
 
 ```
+
+### Use /r instead of /c as a cmd.exe to bypass signature based checks
+>>>
+```
+cmd.exe /r whoami
+
+```
